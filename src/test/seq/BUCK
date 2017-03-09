@@ -1,0 +1,25 @@
+cxx_binary(
+  name = 'max',
+  srcs = [
+    'max.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:tao-sequences',
+  ],
+)
+
+cxx_binary(
+  name = 'min',
+  srcs = [
+    'min.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:tao-sequences',
+  ],
+)
